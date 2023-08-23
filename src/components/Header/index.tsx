@@ -1,10 +1,11 @@
 import React from 'react'
-import { useData } from '../../contexts/DataContext'
+import DateRange from '../DateRange'
 
 const Header = () => {
-  const { data } = useData()
   return (
-    <div>Header {data?.map(item => item.nome)}</div>
+    <div>
+      <DateRange />
+    </div>
   )
 }
 
