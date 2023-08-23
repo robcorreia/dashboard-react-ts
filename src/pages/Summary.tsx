@@ -1,8 +1,11 @@
 import React from 'react'
+import { useData } from '../contexts/DataContext'
 
 const Summary = () => {
+  const { data } = useData()
+
   return (
-    <div>Summary</div>
+    <div>Summary {data && data[0].preco}</div>
   )
 }
 
