@@ -7,7 +7,7 @@ const Summary = () => {
   if (data === null) return null
   return (
     <section>
-      <div className='summary flex'>
+      <div className='summary flex mb'>
         <div className='box'>
           <h2>Vendas</h2>
           <span>{data.filter((item) => item.status !== 'falha').reduce((acc, item) => acc + item.preco, 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
@@ -24,6 +24,7 @@ const Summary = () => {
         </div>
 
       </div>
+      <div className='box mb'>Gráficos</div>
     </section>
   )
 }
