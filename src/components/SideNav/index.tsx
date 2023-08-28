@@ -1,5 +1,6 @@
 import { ArrowsDownUp, EnvelopeSimple, GearSix, House, SignOut, Storefront } from '@phosphor-icons/react'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SideNav = () => {
   return (
@@ -8,11 +9,11 @@ const SideNav = () => {
       <ul>
         <li>
           <div><House size={20} weight="bold" /></div>
-          <a href="">Resumo</a>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <div><Storefront size={20} weight="bold" /></div>
-          <a href="">Vendas</a>
+          <NavLink to="/vendas">Vendas</NavLink>
         </li>
         <li>
           <div><Storefront size={20} weight="bold" /></div>
