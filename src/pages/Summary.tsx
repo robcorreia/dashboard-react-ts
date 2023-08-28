@@ -1,5 +1,6 @@
 import React from 'react'
 import { useData } from '../contexts/DataContext'
+import SalesGraphic from '../components/SalesGraphic'
 
 const Summary = () => {
   const { data } = useData()
@@ -24,7 +25,9 @@ const Summary = () => {
         </div>
 
       </div>
-      <div className='box mb'>Gráficos</div>
+      <div className='box mb'>
+        <SalesGraphic data={data} />
+      </div>
     </section>
   )
 }
